@@ -267,7 +267,7 @@ a {
 }
 
 a:hover {
-  color:  #54BBAB;
+  color: #54BBAB;
   text-decoration: underline;
 }
 
@@ -688,7 +688,7 @@ a {
 }
 
 a:hover {
-  color:  #54BBAB;
+  color: #54BBAB;
   text-decoration: underline;
 }
 
@@ -2972,8 +2972,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color:  #54BBAB !important;
-  border-color:  #54BBAB !important;
+  background-color: #54BBAB !important;
+  border-color: #54BBAB !important;
 }
 
 .btn-primary:focus,
@@ -2984,22 +2984,23 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color:  #54BBAB !important;
-  border-color:  #54BBAB !important;
+  background-color: #54BBAB !important;
+  border-color: #54BBAB !important;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color:  #54BBAB !important;
-  border-color:  #54BBAB !important;
+  background-color: #54BBAB !important;
+  border-color: #54BBAB !important;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: none, 0 0 0 0.2rem  #54BBAB !important;;
+  box-shadow: none, 0 0 0 0.2rem #54BBAB !important;
+  ;
 }
 
 .btn-secondary {
@@ -3586,7 +3587,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color:  #54BBAB;
+  color: #54BBAB;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -5188,7 +5189,7 @@ tbody.collapse.show {
 }
 
 .page-link:hover {
-  color:  #54BBAB;
+  color: #54BBAB;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -6491,8 +6492,8 @@ button.close {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
-  background-color: black;
-  opacity: .85;
+  background-color:rgba(0, 0, 0, 0.7);  
+  opacity: 1;
 }
 
 .align-baseline {
@@ -9664,14 +9665,14 @@ button:focus {
 
 .btn.btn-primary {
   color: #fff;
-  background-color:  #54BBAB !important;
-  border-color:  #54BBAB !important;
-  box-shadow: 0 2px 2px 0  #54BBAB, 0 3px 1px -2px  #54BBAB, 0 1px 5px 0  #54BBAB;
+  background-color: #54BBAB !important;
+  border-color: #54BBAB !important;
+  box-shadow: 0 2px 2px 0 #54BBAB, 0 3px 1px -2px #54BBAB, 0 1px 5px 0 #54BBAB;
 }
 
 .btn.btn-primary:hover {
   color: #fff;
-  background-color:  #54BBAB;
+  background-color: #54BBAB;
   border-color: #47b3a2;
 }
 
@@ -9679,8 +9680,8 @@ button:focus {
 .btn.btn-primary.focus,
 .btn.btn-primary:hover {
   color: #fff;
-  background-color:  #54BBAB;
-  border-color:  #54BBAB;
+  background-color: #54BBAB;
+  border-color: #54BBAB;
 }
 
 .btn.btn-primary:active,
