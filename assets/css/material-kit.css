@@ -88,7 +88,7 @@
 /* LINK STYLING MODAL */
 
 .body {
-  margin-right: 15px  !important;
+  margin-right: 15px !important;
   padding-right: 15px !important;
 }
 
@@ -108,6 +108,7 @@
 
 .navbar.fixed-right a:hover {
   color: #378b7e !important;
+  background-color: white;
   text-decoration: underline;
 }
 
