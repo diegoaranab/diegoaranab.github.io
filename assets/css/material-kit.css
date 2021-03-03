@@ -55,6 +55,26 @@
 
 /* CAROUSEL IMG OPPACITY */
 
+/* CAROUSEL ARROW TRANSLATE */
+
+.carousel-control-next {
+  transition: transform .5s ease;
+}
+
+.carousel-control-prev {
+  transition: transform .5s ease;
+}
+
+.carousel-control-next:hover {
+  transform: translate(10%);
+}
+
+.carousel-control-prev:hover {
+  transform: translate(-10%);
+}
+
+/* CAROUSEL ARROW TRANSLATE */
+
 
 /* LOGO IMG */
 
@@ -77,12 +97,13 @@
 
 /* LINK STYLING NAVBAR */
 
-/* IMG HOVER CAROUSEL */
+/* IMG HOVER ZOOM */
 
 /* [1] The container */
 .img-hover-zoom {
   /* height: 300px; [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */
 }
 
 /* [2] Transition property for smooth transformation of images */
@@ -95,7 +116,7 @@
   transform: scale(1.1);
 }
 
-/* IMG HOVER CAROUSEL */
+/* IMG HOVER ZOOM */
 
 
 /* LINK STYLING MODAL */
