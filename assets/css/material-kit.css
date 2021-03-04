@@ -132,10 +132,17 @@
 
 /* LINK STYLING DONATION TITLE */
 
+/* .donation-title h2 {
+  transition: transform .5s ease;
+
+
+} */
 
 .donation-title h2:hover {
   color: #2e2e2e !important;
   text-decoration: underline;
+  /* transform: scale(1.01); */
+
 }
 
 /* LINK STYLING DONATION TITLE */
@@ -150,6 +157,7 @@
 .social-media i:hover {
   color: gray !important;
 }
+
 /* LINK STYLING SOCIAL MEDIA  */
 
 
