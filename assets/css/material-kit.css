@@ -51,7 +51,9 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.6);
+  /* background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%); */
 }
+
 
 /* CAROUSEL IMG OPPACITY */
 
@@ -119,6 +121,39 @@
 /* IMG HOVER ZOOM */
 
 
+/* LINK STYLING CARDS */
+
+.card-title:hover {
+  color: #378b7e !important;
+  text-decoration: underline;
+}
+
+/* LINK STYLING CARDS */
+
+/* LINK STYLING DONATION TITLE */
+
+
+.donation-title h2:hover {
+  color: #2e2e2e !important;
+  text-decoration: underline;
+}
+
+/* LINK STYLING DONATION TITLE */
+
+
+/* LINK STYLING SOCIAL MEDIA  */
+
+.social-media i {
+  color: black !important;
+}
+
+.social-media i:hover {
+  color: gray !important;
+}
+/* LINK STYLING SOCIAL MEDIA  */
+
+
+
 /* LINK STYLING MODAL */
 
 .modal-body a:hover {
@@ -146,11 +181,11 @@
 
 }
 
-
 .navbar.fixed-right a:hover {
   color: #378b7e !important;
   background-color: white;
   text-decoration: underline;
+  transition: all 0.5s;
 }
 
 .navbar.fixed-right a {
@@ -169,7 +204,7 @@
   .navbar.fixed-right {
     bottom: 0;
     width: 15%;
-    height: 100%;
+    height: 50%;
     flex-flow: column nowrap;
     align-items: flex-start;
 
