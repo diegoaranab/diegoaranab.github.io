@@ -97,6 +97,10 @@
   text-decoration: underline;
 }
 
+.navbar-nav a {
+  text-transform: none;
+}
+
 /* LINK STYLING NAVBAR */
 
 /* IMG HOVER ZOOM */
