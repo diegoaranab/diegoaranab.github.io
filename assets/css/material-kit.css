@@ -40,6 +40,26 @@
 
 /* FONT DEFINITION */
 
+/* FOOTER img */
+
+.footer-image {
+  background-image: linear-gradient(to bottom, rgba(238, 238, 238, .999) 1px, rgba(255, 255, 255, 0)),
+  url("http://transversalthinktank.org/img/img-footer/events-footer.png");
+  /* The image used */
+  height: 500px;
+  /* You must set a specified height */
+  /* background-position: center; */
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* background: linear-gradient(0deg, #00000088 0%, #ffffff44 100%); */
+  /* Resize the background image to cover the entire container */
+}
+
+/* FOOTER img */
+
+
 /* CAROUSEL IMG OPPACITY */
 
 .carousel-item:after {
@@ -90,6 +110,17 @@
 
 /* LOGO IMG */
 
+/* diaLanding IMG STYLING */
+
+.diaLanding img:hover {
+  opacity: .5;
+  box-shadow: 0 5px 15px rgba(84, 187, 171, .55);
+  /* background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%); */
+}
+
+/* diaLanding IMG STYLING */
+
+
 /* LINK STYLING NAVBAR */
 
 .navbar-nav a:hover {
@@ -102,6 +133,29 @@
 }
 
 /* LINK STYLING NAVBAR */
+
+
+
+
+
+/* LINK STYLING MICROSITIO */
+
+.micrositio h5:hover {
+  color: #378b7e !important;
+  text-decoration: underline;
+}
+
+/* LINK STYLING MICROSITIO */
+
+/* LINK STYLING diaLanding */
+
+.diaLanding h4:hover {
+  color: #378b7e !important;
+  text-decoration: underline;
+}
+
+/* LINK STYLING diaLanding */
+
 
 /* IMG HOVER ZOOM */
 
@@ -14954,9 +15008,12 @@ textarea {
   color: #555;
 }
 
-.nav-link {
+/* EDIT */
+/* .nav-link {
   text-transform: uppercase;
-}
+} */
+
+/* EDIT */
 
 .navbar-nav .nav-link {
   padding: 0.5321rem;
@@ -15020,16 +15077,21 @@ textarea {
   border-radius: 0;
 }
 
+/* EDIT */
+
 .navbar .navbar-nav .nav-item .nav-link {
   position: relative;
   color: inherit;
   padding: 0.9375rem;
   font-weight: 400;
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: inherit;
+  text-transform: none;
   border-radius: 3px;
   line-height: 20px;
 }
+
+/* EDIT */
+
 
 .navbar .navbar-nav .nav-item .nav-link:not(.btn-just-icon) .fa {
   position: relative;
@@ -17243,6 +17305,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
 }
 
+/* EDIT */
 footer {
   padding: 0.9375rem 0;
   text-align: center;
@@ -17250,6 +17313,9 @@ footer {
   /* Safari 6.1+ */
   display: flex;
 }
+
+/* EDIT */
+
 
 footer ul {
   margin-bottom: 0;
@@ -17261,21 +17327,32 @@ footer ul li {
   display: inline-block;
 }
 
+/* EDIT */
+
+
 footer ul li a {
   color: inherit;
   padding: 0.9375rem;
+  line-height: 5px;
   font-weight: 500;
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: inherit;
+  text-transform: none;
   border-radius: 3px;
   text-decoration: none;
   position: relative;
   display: block;
 }
 
+
+/* EDIT */
+
+/* EDIT */
+
 footer ul li a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
+
+/* EDIT */
 
 footer ul li .btn {
   margin: 0;
