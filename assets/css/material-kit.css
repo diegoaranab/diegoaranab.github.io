@@ -59,6 +59,8 @@
 
 /* FOOTER img */
 
+/* NEWSLETTER EMAIL STYLING */
+
 .emailNews .form-control2 {
   display: block;
   width: 100%;
@@ -78,6 +80,27 @@
   border-color: #54BBAB;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(84, 187, 171, 0.6);
 }
+
+/* NEWSLETTER EMAIL STYLING */
+
+/* THINKTANK TITLE ANIMATIONS */
+
+.thinkTank h3 {
+  transition: transform .5s ease;
+}
+
+
+
+.thinkTank h3:hover {
+  transform: translate(3%);
+  color: #378b7e !important;
+
+}
+
+
+/* THINKTANK TITLE ANIMATIONS */
+
+
 
 /* CAROUSEL IMG OPPACITY */
 
@@ -15155,11 +15178,15 @@ textarea {
   transform-origin: 100% 0;
 }
 
+/* EDIT */
+
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item.active .nav-link:hover,
 .navbar .navbar-nav .nav-item.active .nav-link:focus {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
+
+/* EDIT */
 
 .navbar .btn,
 .navbar .navbar-nav .nav-item .btn {
