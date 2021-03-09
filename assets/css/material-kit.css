@@ -44,7 +44,7 @@
 
 .footer-image {
   background-image: linear-gradient(to bottom, rgba(238, 238, 238, .999) 1px, rgba(255, 255, 255, 0)),
-  url("http://transversalthinktank.org/img/img-footer/events-footer.png");
+    url("http://transversalthinktank.org/img/img-footer/events-footer.png");
   /* The image used */
   height: 500px;
   /* You must set a specified height */
@@ -59,6 +59,25 @@
 
 /* FOOTER img */
 
+.emailNews .form-control2 {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-align: center;
+}
+
+.emailNews .form-control2:focus {
+  border-color: #54BBAB;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(84, 187, 171, 0.6);
+}
 
 /* CAROUSEL IMG OPPACITY */
 
@@ -17325,6 +17344,12 @@ footer ul {
 
 footer ul li {
   display: inline-block;
+  color: inherit;
+  line-height: 5px;
+  font-weight: 500;
+  font-size: inherit;
+  text-transform: none;
+  border-radius: 3px;
 }
 
 /* EDIT */
