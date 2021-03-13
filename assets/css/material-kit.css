@@ -100,6 +100,20 @@
 
 /* THINKTANK TITLE ANIMATIONS */
 
+/* DETALLES TITLE ANIMATIONS */
+
+.detalles h2 {
+  transition: transform .5s ease;
+}
+
+.detalles h2:hover {
+  color: #9b9b9b !important;
+
+}
+
+
+/* DETALLES TITLE ANIMATIONS */
+
 
 /* ACERCADE TITLE ANIMATIONS */
 
