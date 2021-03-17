@@ -173,7 +173,10 @@ h4:hover {
 
 /* ACERCADE TITLE ANIMATIONS */
 
-
+.carousel-cell img {
+  height: 10vh;
+  width: auto;
+}
 
 /* CAROUSEL IMG OPPACITY */
 
