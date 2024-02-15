@@ -3,79 +3,137 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Me Perdonas Ale?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
     <style>
         body {
             text-align: center;
-            margin-top: 10%;
-            font-family: Arial, sans-serif;
-            font-size: 5em;
-            color: rgb(6, 6, 185);
-            font-weight: 500;
+            padding-top: 20px;
         }
 
-        #yes-button,
-        #no-button {
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 20vh;
+            /* Adjust this value if needed */
+            overflow: hidden;
+        }
+
+        .gif-container img {
+            width: auto;
+            height: 100%;
+            margin: 0 5px;
+            /* Adds space between GIFs */
+        }
+
+
+        #yesButton,
+        #noButton {
+            border: none;
+            border-radius: 20px;
+            padding: 15px 30px;
             margin: 10px;
-            padding: 5px 15px;
+            font-size: 18px;
             cursor: pointer;
-            font-size: .33em;
-            color: black;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
-        #love-message,
-        #heart {
-            display: none;
-            font-size: 1em;
-            color: rgb(15, 15, 184);
-            font-weight: 500;
+        #yesButton:hover,
+        #noButton:hover {
+            transform: scale(1.1);
         }
 
-        #heart {
-            font-size: 48px;
-            animation: pulse 1s infinite;
+        #yesButton {
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
         }
 
-        @keyframes pulse {
+        #noButton {
+            background-color: #f44336;
+            /* Red */
+            color: white;
+        }
+
+        #yesButton:focus,
+        #noButton:focus {
+            outline: none;
+        }
+
+        @keyframes beat {
             0% {
                 transform: scale(1);
             }
 
+            25% {
+                transform: scale(1.2);
+            }
+
             50% {
-                transform: scale(1.3);
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(1.2);
             }
 
             100% {
                 transform: scale(1);
             }
         }
-    </style>
-    <script>
-        function yesClicked() {
-            document.getElementById('question').style.display = 'none';
-            document.getElementById('yes-button').style.display = 'none';
-            document.getElementById('no-button').style.display = 'none';
-            document.getElementById('love-message').style.display = 'block';
-            document.getElementById('heart').style.display = 'block';
-        }
 
-        function noHovered() {
-            var noButton = document.getElementById('no-button');
-            var x = Math.random() * (window.innerWidth - noButton.clientWidth);
-            var y = Math.random() * (window.innerHeight - noButton.clientHeight);
-            noButton.style.position = 'absolute';
-            noButton.style.left = x + 'px';
-            noButton.style.top = y + 'px';
+        .heart {
+            font-size: 48px;
+            color: red;
+            animation: beat 1s infinite;
         }
-    </script>
+    </style>
 </head>
 
 <body>
-    <div id="question">Me Perdonas Ale?</div>
-    <button id="yes-button" onclick="yesClicked()">Si</button>
-    <button id="no-button" onmouseover="noHovered()">No</button>
-    <div id="love-message">Yo también te amo Ale!!!!!!!!!!</div>
-    <div id="heart">❤️</div>
+
+    <div class="gif-container">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExanc1bXk3MXAyeXh1eGpob2RrNG5pd3gzdGt1bmkyejg4M2EzMzFoZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IvWYwE0k0RPp2tHqAl/giphy.gif"
+            alt="GIF 1">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTdhcjN0NXJiYXQ4c3Jvc3B3enFpbDAwcGRzNWc2ajJtaTU3ZjJuZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wV4TcPUTPUO9NatNRs/giphy.gif"
+            alt="GIF 2">
+
+    </div>
+
+    <h2>¿Serías mi San Valentín?</h2>
+
+    <button id="yesButton">Si</button>
+    <button id="noButton">No</button>
+
+    <script>
+        let noClickCount = 0;
+        const noButton = document.getElementById('noButton');
+        const yesButton = document.getElementById('yesButton');
+
+        noButton.addEventListener('click', function () {
+            noClickCount++;
+            const growthRate = 13; // Adjust this value to control how much the button grows
+            yesButton.style.padding = (15 + noClickCount * growthRate) + 'px ' + (30 + noClickCount * 2 * growthRate) + 'px';
+            yesButton.style.fontSize = (18 + noClickCount * 2) + 'px'; // Makes text grow too
+            if (noClickCount > 999) {
+                noButton.disabled = true;
+                yesButton.style.width = '100%';
+                yesButton.style.height = '100vh';
+                document.body.innerHTML = '<div class="gif-container"><img src="YOUR_GIF_URL_AFTER_YES_1" alt="GIF 1"><img src="YOUR_GIF_URL_AFTER_YES_2" alt="GIF 2"><img src="YOUR_GIF_URL_AFTER_YES_3" alt="GIF 3"></div><h2>Ok yay!!!</h2><div style="font-size: 48px;">❤️</div>';
+            } else {
+                const messages = ["De verdad quieres romperme el corazón?", "Incluso Bolo piensa que somos buena pareja!", "Este botón está roto o es sólo mi corazón?", "Prometo compartir mis Chips Fuego contigo!", "Empezaré a ver mas al Dalas por ti!", "Estás presionando 'No' sólo para ver estos mensajes?", "La próxima vez preguntaré con perritos!", "Cuántos 'No' hasta que digas 'Sí'?", "Pero yo te amo guapa!", "Te mando unas flores!", "Te mando un Starbucks jajaja"];
+                const randomIndex = Math.floor(Math.random() * messages.length);
+                noButton.textContent = messages[randomIndex];
+            }
+        });
+
+        yesButton.addEventListener('click', function () {
+            document.body.innerHTML = '<div class="gif-container"><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXhkZ2gxcXRwMjFrMXM2a296ODlwZzAzOGR3ZDZuNjBicmViOGZueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/teTZJLUKRMzYQCN7D1/giphy.gif" alt="GIF 1"><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtoaHlkbzdnaXE1MGN2ODh0aTM5c2F3bnM0MmczMHB1YjdrOWNodyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mricmuf42pRqwzH9QN/giphy.gif" alt="GIF 2"></div><h2>Te amo mi vida!!! Eres lo mejor que ha pasado en mi vida :) Te cuidaré, amaré y acompañaré por siempre, te prometo que no te faltará nada en tu vida y haré todo mi esfuerzo porque cumplas tus sueños y por siempre hacerte más feliz de lo que ya eres! Te quiero muchísimo amor <3</h2><div  class="heart" style="font-size: 48px;">❤️</div>';
+        });
+    </script>
+
 </body>
 
 </html>
