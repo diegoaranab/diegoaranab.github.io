@@ -1,0 +1,656 @@
+<!--
+Designed by Diego Arana Ballesteros
+ -->
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <title>
+    GyG Protección Civil
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/soft-design-system.css?v=1.0.9" rel="stylesheet" />
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+  <style>
+    .carousel {
+      /* Optional: add margin to the entire carousel */
+      margin: 0 auto;
+    }
+
+    .carousel-cell {
+      /* Set the size for the cells */
+      width: 200px;
+      /* Adjust to your preferred width */
+      height: 150px;
+      /* Adjust to your preferred height */
+      padding: 10px;
+      /* Adjust padding for spacing */
+
+      /* Center content in each cell */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-cell img {
+      /* Make images fit their cells while maintaining aspect ratio */
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      /* Ensures the image is scaled down but doesn't get stretched */
+    }
+  </style>
+</head>
+
+<body class="about-us">
+  <!-- Navbar Transparent -->
+  <!-- Navbar Dark -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-dark z-index-3 py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="" rel="tooltip" title="GyG Protección Civil" data-placement="bottom"
+        target="_blank">
+        GyG Protección Civil
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Hamburger icon -->
+        <span class="navbar-toggler-icon"
+          style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27rgba(255, 255, 255, 1)%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover mx-auto">
+          <li class="nav-item px-3">
+            <a class="nav-link text-white opacity-8" href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item px-3">
+            <a class="nav-link text-white opacity-8" href="nosotros.html">
+              Nosotros
+            </a>
+          </li>
+
+          <li class="nav-item px-3">
+            <a class="nav-link text-white opacity-8">
+              Servicios
+            </a>
+          </li>
+
+          <li class="nav-item px-3">
+            <a class="nav-link text-white opacity-8">
+              Clientes
+            </a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link text-white opacity-8">
+              Noticias
+            </a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link text-white opacity-8">
+              Contacto
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          <button class="btn bg-gradient-success mb-0">Contáctanos</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End Navbar -->
+
+  <!-- -------- START HEADER 7 w/ text and video ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('../assets/img/index_hero.jpg');">
+      <span class="mask bg-gradient-info opacity-8"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">Tu Aliado en la Prevención de Riesgos</h1>
+            <p class="lead mb-4 text-white opacity-8">30 años de experiencia garantizando la seguridad de tu empresa y
+              comunidad</p>
+            <button type="submit" class="btn bg-gradient-success text-white">Contáctanos</button>
+            <h6 class="text-white mb-2 mt-5">Encuéntranos en:</h6>
+            <div class="d-flex justify-content-center">
+              <a href="javascript:;"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-whatsapp text-lg text-white me-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute w-100 z-index-1 bottom-0">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="moving-waves">
+            <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+            <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+            <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+            <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 7 w/ text and video ------- -->
+  <!-- Section with four info areas left & one card right with image and waves -->
+  <section class="py-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2>Nuestros Servicios</h2>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="row justify-content-start">
+            <div class="col-md-6">
+              <div class="info">
+                <div class="icon icon-shape text-center">
+                  <i class="fas fa-shield-alt text-danger mx-auto" style="font-size: 25px;"></i>
+
+
+
+                </div>
+                <h5>Protección Civil</h5>
+                <p>Desarrollamos programas internos de protección civil para instituciones, empresas e industrias, y
+                  realizamos estudios de riesgo y vulnerabilidad para asegurar que todas las instalaciones cumplan con
+                  los más altos estándares de seguridad.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info">
+                <div class="icon icon-shape text-center">
+                  <i class="fas fa-hard-hat text-danger mx-auto" style="font-size: 25px;"></i>
+
+                </div>
+                <h5>Capacitación en Seguridad</h5>
+                <p>Ofrecemos formación especializada en la prevención de riesgos, combate de incendios, primeros
+                  auxilios, y evacuaciones en situaciones de emergencia como sismos y derrames de materiales peligrosos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" row justify-content-start">
+            <div class="col-md-6">
+              <div class="info">
+                <div class="icon icon-shape text-center">
+                  <i class="fas fa-toolbox text-danger mx-auto" style="font-size: 25px;"></i>
+
+                </div>
+                <h5>Venta de Equipos de Seguridad</h5>
+                <p>Proveemos insumos esenciales para la protección, como extintores, sistemas contra incendios,
+                  equipos
+                  de protección personal, y detectores de humo, garantizando la calidad y funcionalidad de
+                  nuestros
+                  productos.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info">
+                <div class="icon icon-shape text-center">
+                  <i class="fas fa-leaf text-danger mx-auto" style="font-size: 25px;"></i>
+
+                </div>
+                <h5>Consultoría Ambiental</h5>
+                <p>Realizamos estudios de impacto ambiental y tramitología en materia ambiental, ayudando a las empresas
+                  a cumplir con las normativas vigentes y a minimizar su impacto ecológico. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
+          <div class="card shadow-lg">
+            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+              <div class="d-block blur-shadow-image">
+                <img src="../assets/img/nuestros_servicios.jpg" alt="img-blur-shadow"
+                  class="img-fluid shadow rounded-3">
+              </div>
+              <div class="colored-shadow" style="background-image: url('../assets/img/nuestros_servicios.jpg');">
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="javascript:;">
+                <h5 class="mt-3">
+                  Consulta todos nuestros servicios
+                </h5>
+              </a>
+              <!-- CTA button -->
+              <a href="#servicios" class="btn bg-gradient-success mt-3">Servicios</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END Section with four info areas left & one card right with image and waves -->
+  <!-- -------- START Features w/ pattern background & stats & rocket -------- -->
+  <section class="pt-sm-8 pb-5 position-relative bg-gradient-dark">
+    <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+      <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>wave-down</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g fill="#FFFFFF" fill-rule="nonzero">
+            <g id="wave-down">
+              <path
+                d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z"
+                id="Path-Copy-2"
+                transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) ">
+              </path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-start mb-5 mt-5">
+          <h3 class="text-white z-index-1 position-relative">Clientes que confían en nosotros</h3>
+          <p class="text-white opacity-8 mb-0">Organizaciones líderes como Cinepolis, PepsiCo, OCESA y FIA confían en
+            nosotros
+            para sus necesidades de seguridad.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="card card-profile overflow-hidden">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                <a href="javascript:;">
+                  <div class="p-3 pe-md-0">
+                    <img class="w-100 border-radius-md" src="../assets/img/cine_logo.jpeg" alt="image">
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                <div class="card-body">
+                  <h5 class="mb-0">Cinepolis</h5>
+                  <h6 class="text-info">Entretenimiento y Cines</h6>
+                  <p class="mb-0">La cadena de cines más grande de América Latina. Proveemos soluciones de seguridad
+                    para sus instalaciones y eventos, garantizando la protección de empleados y clientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="card card-profile mt-lg-0 mt-5 overflow-hidden">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                <a href="javascript:;">
+                  <div class="p-3 pe-md-0">
+                    <img class="w-100 border-radius-md" src="../assets/img/pepsico_logo.jpeg" alt="image">
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                <div class="card-body">
+                  <h5 class="mb-0">PepsiCo</h5>
+                  <h6 class="text-info">Alimentos y Bebidas</h6>
+                  <p>Multinacional líder en alimentos y bebidas. Implementamos programas de protección civil y seguridad
+                    en sus plantas y oficinas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-6 col-12">
+          <div class="card card-profile overflow-hidden z-index-2">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                <a href="javascript:;">
+                  <div class="p-3 pe-md-0">
+                    <img class="w-100 border-radius-md" src="../assets/img/ocesa_logo.jpg" alt="image">
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                <div class="card-body">
+                  <h5 class="mb-0">OCESA</h5>
+                  <h6 class="text-info">Entretenimiento y Producción de Eventos</h6>
+                  <p>Líder en la organización de conciertos y eventos masivos en México. Proveemos consultoría en
+                    seguridad y simulacros para eventos con gran afluencia de público.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="card card-profile mt-lg-0 mt-5 overflow-hidden z-index-2">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                <a href="javascript:;">
+                  <div class="p-3 pe-md-0">
+                    <img class="w-100 border-radius-md" src="../assets/img/fia_logo.svg" alt="image">
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                <div class="card-body">
+                  <h5 class="mb-0">FIA</h5>
+                  <h6 class="text-info">Deportes Automovilísticos</h6>
+                  <p>Organiza eventos como Fórmula 1 y Fórmula E. Aseguramos la seguridad en eventos internacionales,
+                    protegiendo tanto a participantes como al público.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute w-100 bottom-0 mn-n1">
+      <svg width="100%" viewBox="0 -1 1920 166" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>wave-up</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(0.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="wave-up" transform="translate(0.000000, -5.000000)">
+              <path
+                d="M0,70 C298.666667,105.333333 618.666667,95 960,39 C1301.33333,-17 1621.33333,-11.3333333 1920,56 L1920,165 L0,165 L0,70 Z"
+                fill="#f8f9fa"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </section>
+  <!-- -------- END Features w/ pattern background & stats & rocket -------- -->
+  <section class="pt-2 pb-6 bg-gray-100" id="count-stats">
+    <div class="container">
+      <div class="row mb-7">
+        <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3000 }'>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/fia_logo.svg"
+              alt="Logo 1"></div>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/ocesa_logo.jpg"
+              alt="Logo 2"></div>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/pepsico_logo.jpeg"
+              alt="Logo 3"></div>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/cine_logo.jpeg"
+              alt="Logo 4"></div>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/city_logo.jpg"
+              alt="Logo 5"></div>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/bachoco_logo.webp"
+              alt="Logo 6"></div>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/famsa_logo.png"
+              alt="Logo 7"></div>
+          <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/hellman_logo.png"
+              alt="Logo 8"></div>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-md-3">
+          <h1 class="text-gradient text-info" id="state1" countTo="30">0</h1>
+          <h5>Años</h5>
+          <p>De experiencia en el sector de protección civil, medio ambiente y prevención de riesgos</p>
+        </div>
+        <div class="col-md-3">
+          <h1 class="text-gradient text-info"><span id="state2" countTo="10">0</span>+</h1>
+          <h5>Certificados</h5>
+          <p>De normativas, incluyendo SINAPROCI, STPS, CANACINTRA y COPARMEX</p>
+        </div>
+        <div class="col-md-3">
+          <h1 class="text-gradient text-info"><span id="state3" countTo="500">0</span>+</h1>
+          <h5>Empresas protegidas</h5>
+          <p>Ofreciendo asesoría y equipos de seguridad en distintos sectores como entretenimiento, alimentación,
+            automovilismo y más</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------- START PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
+  <section class="my-5 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <h4>Contáctanos para realizar una cotización</h4>
+          <p class="mb-4">
+            Tu seguridad es nuestra prioridad número uno.
+          </p>
+          <div class="row">
+
+            <div class="col-4 ps-0">
+              <button type="button"
+                class="btn bg-gradient-success mx-1 my-1 h-100 position-relative z-index-2">Contáctanos</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 ms-auto">
+          <div class="position-relative">
+            <div class="d-block blur-shadow-image">
+              <img class="max-width-50 w-100 position-relative z-index-2 img-fluid shadow rounded-3"
+                alt="img-blur-shadow2" src="../assets/img/index_prot.png">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
+  <footer class="footer pt-5 mt-5">
+    <hr class="horizontal dark mb-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-3 mb-4 ms-auto">
+          <div>
+            <h6 class="text-gradient text-danger font-weight-bolder">GyG Protección Civil</h6>
+          </div>
+          <div>
+            <p class="mt-3 mb-2 opacity-8">Calle 2 Norte #406 Colonia Centro</p>
+            <h6 class="mt-3 mb-2 opacity-8">Redes Sociales</h6>
+            <ul class="d-flex flex-row ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim/" target="_blank">
+                  <i class="fab fa-facebook text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
+                  <i class="fab fa-twitter text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://dribbble.com/creativetim" target="_blank">
+                  <i class="fab fa-instagram text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://github.com/creativetimofficial" target="_blank">
+                  <i class="fab fa-whatsapp text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
+                  target="_blank">
+                  <i class="fab fa-youtube text-lg opacity-8"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-gradient text-danger text-sm">Nosotros</h6>
+            <ul class="flex-column ms-n3 nav"></ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-gradient text-danger text-sm">Servicios</h6>
+            <ul class="flex-column ms-n3 nav"></ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-gradient text-danger text-sm">Clientes</h6>
+            <ul class="flex-column ms-n3 nav"></ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+          <div>
+            <h6 class="text-gradient text-danger text-sm">Noticias</h6>
+            <ul class="flex-column ms-n3 nav"></ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="my-4 text-sm">
+              Derechos Reservados ©
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+  <script src="../assets/js/plugins/countup.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="../assets/js/plugins/parallax.min.js"></script>
+  <!-- Control Center for Soft UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="../assets/js/soft-design-system.min.js?v=1.0.9" type="text/javascript"></script>
+  <!--Flickity init-->
+  <script>
+    var elem = document.querySelector('.carousel');
+    var flkty = new Flickity(elem, {
+      wrapAround: true,
+      autoPlay: 3000
+    });
+  </script>
+  <script>
+    if (document.getElementsByClassName('page-header')) {
+      window.addEventListener('scroll', function () {
+        var scrollPosition = window.pageYOffset;
+        var bgParallax = document.querySelector('.page-header');
+        var limit = bgParallax.offsetTop + bgParallax.offsetHeight;
+        if (scrollPosition > bgParallax.offsetTop && scrollPosition <= limit) {
+          bgParallax.style.backgroundPositionY = (50 - 10 * scrollPosition / limit * 3) + '%';
+        } else {
+          bgParallax.style.backgroundPositionY = '50%';
+        }
+      });
+    }
+  </script>
+  <script>
+    // get the element to animate
+    var element = document.getElementById('count-stats');
+    var elementHeight = element.clientHeight;
+
+    // listen for scroll event and call animate function
+
+    document.addEventListener('scroll', animate);
+
+    // check if element is in view
+    function inView() {
+      // get window height
+      var windowHeight = window.innerHeight;
+      // get number of pixels that the document is scrolled
+      var scrollY = window.scrollY || window.pageYOffset;
+      // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+      var scrollPosition = scrollY + windowHeight;
+      // get element position (distance from the top of the page to the bottom of the element)
+      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+
+      // is scroll position greater than element position? (is element in view?)
+      if (scrollPosition > elementPosition) {
+        return true;
+      }
+
+      return false;
+    }
+
+    var animateComplete = true;
+    // animate element when it is in view
+    function animate() {
+
+      // is element in view?
+      if (inView()) {
+        if (animateComplete) {
+          if (document.getElementById('state1')) {
+            const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+            if (!countUp.error) {
+              countUp.start();
+            } else {
+              console.error(countUp.error);
+            }
+          }
+          if (document.getElementById('state2')) {
+            const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+            if (!countUp1.error) {
+              countUp1.start();
+            } else {
+              console.error(countUp1.error);
+            }
+          }
+          if (document.getElementById('state3')) {
+            const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+            if (!countUp2.error) {
+              countUp2.start();
+            } else {
+              console.error(countUp2.error);
+            };
+          }
+          animateComplete = false;
+        }
+      }
+    }
+
+    if (document.getElementById('typed')) {
+      var typed = new Typed("#typed", {
+        stringsElement: '#typed-strings',
+        typeSpeed: 90,
+        backSpeed: 90,
+        backDelay: 200,
+        startDelay: 500,
+        loop: true
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>
