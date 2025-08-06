@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Lista textual de clientes representativos según el documento de GyG.">
   <title>Casos y Clientes - GyG Protección Civil</title>
-  <link href="../assets/css/soft-design-system.css?v=1.0.9" rel="stylesheet" />
+  <link href="assets/css/soft-design-system.css?v=1.0.9" rel="stylesheet" />
   <style>
     .navbar-nav .nav-link:focus-visible { outline: 2px dashed #fff; outline-offset:2px; }
   </style>
@@ -39,12 +40,113 @@
     <section class="py-5">
       <div class="container">
         <h1>Casos y Clientes</h1>
-        <ul class="list-unstyled"></ul>
+        <div class="mb-3">
+          <button type="button" class="btn btn-sm btn-outline-primary me-2" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="btn btn-sm btn-outline-primary me-2" data-filter="retail">Retail</button>
+          <button type="button" class="btn btn-sm btn-outline-primary me-2" data-filter="hoteles">Hoteles/Eventos</button>
+          <button type="button" class="btn btn-sm btn-outline-primary me-2" data-filter="educacion">Educación</button>
+          <button type="button" class="btn btn-sm btn-outline-primary me-2" data-filter="gobierno">Gobierno</button>
+          <button type="button" class="btn btn-sm btn-outline-primary me-2" data-filter="salud">Salud</button>
+          <button type="button" class="btn btn-sm btn-outline-primary me-2" data-filter="energia">Energía</button>
+          <button type="button" class="btn btn-sm btn-outline-primary" data-filter="manufactura">Manufactura</button>
+        </div>
+        <ul class="list-unstyled">
+          <li data-sector="retail">CENTRO COMERCIAL EL PASEO TEHUACAN</li>
+          <li data-sector="manufactura">BOXMARK LEATHER DE MEXICO S.A. DE C.V.(PROVEEDOR DE AUDI)</li>
+          <li data-sector="hoteles">HOTEL CITY EXPRESS TEHUACAN</li>
+          <li data-sector="hoteles">CINEPOLIS TEHUACAN</li>
+          <li data-sector="manufactura">BACHOCO</li>
+          <li data-sector="retail">FAMSA</li>
+          <li data-sector="manufactura">PEPSICO</li>
+          <li data-sector="manufactura">HELLMAN WORL WIDE</li>
+          <li data-sector="retail">FARMACIAS SIMILARES (BOTICARIOS DEL PUEBLO)</li>
+          <li data-sector="retail">ROCKETO</li>
+          <li data-sector="hoteles">FIA FEDERACION INTENACIONAL DE AUTOMOVILISMO (COBERTURA SAFETY EN EVENTOS INTERNACIONALES, FORMULA 1, FORMULA E, WORLD ENDURANCE CHAMPIONSHIP)</li>
+          <li data-sector="retail">GRUPO EXCELENCIA (AGENCIAS: NISSAN, RENAULT, HONDA, KIA)</li>
+          <li data-sector="hoteles">JACKPOT TEHUACAN (CORPORATIVOO CODERE HIPÓDROMO DE LAS AMERICAS)</li>
+          <li data-sector="hoteles">WINPOT CASINO LA NORIA PUEBLA (CORPORATIVO PUR UMAZAL TOV)</li>
+          <li data-sector="manufactura">LABORATORIO AVIMEX ASESOR DEL CORPORATIVO A NIVEL NACIONAL</li>
+          <li data-sector="otros">PROMOTORA DE PERSONAL D.F.</li>
+          <li data-sector="hoteles">MVS ASESOR DE EVENTOS MASIVOS A NIVEL NACIONAL</li>
+          <li data-sector="hoteles">HARLEY DAVIDSON PUEBLA ASESOR Y OPERADOR DE EVENTOS MASIVOS</li>
+          <li data-sector="hoteles">APODACA GROUP ASESOR Y OPERADOR DE EVENTOS MASIVOS</li>
+          <li data-sector="hoteles">OCESA ASESOR Y OPERADOR DE EVENTOS MASIVOS</li>
+          <li data-sector="educacion">UNIVERSIDAD INTERAMERICANA PARA EL DESARROLLO (UNID) CAMPUS TEHUACAN</li>
+          <li data-sector="educacion">UNIDAD ESCOLAR LIC. BENITO JUAREZ CAMPUS TEHUACAN Y PUEBLA</li>
+          <li data-sector="educacion">INSTITUTO CULINARIO BOULANGER PUEBLA</li>
+          <li data-sector="manufactura">MINERA SANTA MONICA IZUCAR DE MATAMOROS</li>
+          <li data-sector="hoteles">HOTEL CASA CANTARRANAS TEHUACAN</li>
+          <li data-sector="hoteles">HOTEL VILLA BLANCA TEHUACAN</li>
+          <li data-sector="hoteles">HOTEL MONROY TEHUACAN</li>
+          <li data-sector="hoteles">HOTEL MONIETT TEHUACAN</li>
+          <li data-sector="manufactura">COSTURAS Y MANUFACTURAS DE TLAXCALA S. DE R.L. DE C.V. PLANTA TEHUACAN</li>
+          <li data-sector="salud">SERVCIOS DE ATENCION Y CUIDADO INFANTIL A NIVEL ESTADO</li>
+          <li data-sector="gobierno">CAICS DEPENDIENTES DEL DIF ESTATAL A NIVEL ESTADO</li>
+          <li data-sector="retail">CADENA DE RESTAURANTES BRAZILIAN ASESOR DEL CORPORTIVO A NIVEL NACIONAL</li>
+          <li data-sector="retail">HAPPY LAND ANTES DIVERSIONES MOY TEHUACAN</li>
+          <li data-sector="retail">BURGER KING TEHUACAN</li>
+          <li data-sector="manufactura">GEOMETRIKA DE GRUPO EXCEL NOBLEZA</li>
+          <li data-sector="manufactura">MANUFACTURA, DESARROLLO DIGITAL Y PROCESOS INDUSTRIALES S.A. DE C.V.</li>
+          <li data-sector="gobierno">H. AYUNTAMIENTO DE TEHUACAN</li>
+          <li data-sector="gobierno">H. AYUNTAMIENTO DE COXCALTLAN</li>
+          <li data-sector="retail">SCALA DISTRITO SONATA</li>
+          <li data-sector="gobierno">FINANCIERA NACIONAL DE DESARROLLO AGROPECUARIO, RURAL, FORESTAL Y PESQUERO (FND)</li>
+          <li data-sector="educacion">INSTITUTO ARNOLD GESELL</li>
+          <li data-sector="educacion">COLEGIO MARIA TERESA LOPEZ VIUDA DE TELLEZ</li>
+          <li data-sector="educacion">CENTRO DE ESTUDIO KENNEDY</li>
+          <li data-sector="educacion">COLEGIO DISCOVERY</li>
+          <li data-sector="educacion">INTITUTO D’VINCI</li>
+          <li data-sector="educacion">INSTITUTO EDUCARES</li>
+          <li data-sector="energia">ESTACIÓN DE SERVICIO OXI FUELL</li>
+          <li data-sector="energia">GASOLINERA PEÑAFIEL</li>
+          <li data-sector="energia">ESTACIÓN DE SERVICIO SOCORRO ROMERO SANCHEZ</li>
+          <li data-sector="energia">GASOLINERA EL RIEGO</li>
+          <li data-sector="hoteles">HOTELES ONE PUEBLA</li>
+          <li data-sector="salud">IMSS RED DE GUARDERIAS</li>
+          <li data-sector="salud">CENTRO MEDICO ESPERANZA</li>
+          <li data-sector="gobierno">CIUDAD MODELO GOBIERNO DEL ESTADO DE PUEBLA</li>
+          <li data-sector="otros">FINAGAM</li>
+          <li data-sector="retail">OFFICE DEPOT</li>
+          <li data-sector="retail">RADIO SHACK</li>
+          <li data-sector="retail">INBURSA</li>
+          <li data-sector="otros">TELMEX</li>
+          <li data-sector="gobierno">MUNICIPIO DE ZINACATEPEC</li>
+          <li data-sector="gobierno">BIOSFERA TEHUACAN CUICATLAN</li>
+          <li data-sector="otros">ASA TEHUACAN</li>
+          <li data-sector="retail">COPIZZA S DE R.L DE C.V (LITTLE CAESARS PIZZAS)</li>
+          <li data-sector="otros">GRUAS Y MANIOBRAS OSCARIN</li>
+          <li data-sector="otros">GRUAS OLIVIER</li>
+          <li data-sector="manufactura">GRUPO LUIN FARMACEUTICA</li>
+          <li data-sector="gobierno">GOBIERNO FEDERAL</li>
+          <li data-sector="otros">FINSOL</li>
+          <li data-sector="manufactura">CONSERFLOW</li>
+          <li data-sector="otros">GRUPO RADIORAMA</li>
+          <li data-sector="educacion">ISIMA</li>
+          <li data-sector="otros">AAOCSA</li>
+          <li data-sector="salud">VALLE DE LOS ANGELES GRUPO FUNERARIO</li>
+          <li data-sector="otros">GRUPO MAZARA</li>
+        </ul>
+        <p class="text-muted mt-3">*Lista textual tomada del documento proporcionado por GyG. No se incluyen marcas adicionales.</p>
       </div>
-    </section>
+  </section>
   </main>
 
-  <script src="../assets/js/core/bootstrap.min.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      const buttons = document.querySelectorAll('[data-filter]');
+      const items = document.querySelectorAll('ul.list-unstyled li');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+          const sector = btn.getAttribute('data-filter');
+          items.forEach(li => {
+            li.hidden = sector !== 'todos' && li.getAttribute('data-sector') !== sector;
+          });
+        });
+      });
+    });
+  </script>
+  <script src="assets/js/core/bootstrap.min.js" defer></script>
 </body>
 </html>
 
