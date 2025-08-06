@@ -19,13 +19,27 @@ Designed by Diego Arana Ballesteros
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous" defer></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/soft-design-system.css?v=1.0.9" rel="stylesheet" />
+  <meta name="description"
+    content="Consultoría y servicios en protección civil y prevención de riesgos. Capacitación, programas internos, dictámenes e inspecciones.">
+  <meta property="og:title" content="GyG Protección Civil">
+  <meta property="og:description"
+    content="Consultoría y servicios en protección civil y prevención de riesgos. Capacitación, programas internos, dictámenes e inspecciones.">
+  <meta property="og:image" content="https://diegoaranab.github.io/assets/img/index_hero.jpg">
+  <meta property="og:url" content="https://diegoaranab.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GyG Protección Civil">
+  <meta name="twitter:description"
+    content="Consultoría y servicios en protección civil y prevención de riesgos. Capacitación, programas internos, dictámenes e inspecciones.">
+  <meta name="twitter:image" content="https://diegoaranab.github.io/assets/img/index_hero.jpg">
   <!-- Nepcha Analytics (nepcha.com) -->
   <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
   <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+  <link rel="preload" as="image" href="../assets/img/index_hero.jpg" fetchpriority="high">
 
   <style>
     .carousel {
@@ -55,7 +69,21 @@ Designed by Diego Arana Ballesteros
       object-fit: contain;
       /* Ensures the image is scaled down but doesn't get stretched */
     }
+
+    .navbar-nav .nav-link:focus-visible {
+      outline: 2px dashed #fff;
+      outline-offset: 2px;
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization","LocalBusiness"],
+    "name": "GyG Protección Civil"
+    // "url": "",
+    // "telephone": ""
+  }
+  </script>
 </head>
 
 <body class="about-us">
@@ -83,6 +111,7 @@ Designed by Diego Arana Ballesteros
           <li class="nav-item px-3"><a class="nav-link text-white opacity-8" href="certificaciones.html">Certificaciones</a></li>
           <li class="nav-item px-3"><a class="nav-link text-white opacity-8" href="casos.html">Casos/Clientes</a></li>
           <li class="nav-item px-3"><a class="nav-link text-white opacity-8" href="recursos.html">Recursos</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white opacity-8" href="sobre-nosotros.html">Sobre Nosotros</a></li>
           <li class="nav-item px-3"><a class="nav-link text-white opacity-8" href="contacto.html">Contacto</a></li>
         </ul>
 
@@ -97,20 +126,17 @@ Designed by Diego Arana Ballesteros
 
   <!-- -------- START HEADER 7 w/ text and video ------- -->
   <header class="bg-gradient-dark">
-    <div class="page-header min-vh-75" style="background-image: url('../assets/img/index_hero.jpg');">
+    <div class="page-header min-vh-75 position-relative">
       <span class="mask bg-gradient-info opacity-8"></span>
-      <div class="container">
+      <img src="../assets/img/index_hero.jpg" width="1555" height="1036" alt="Personal en capacitación"
+        class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;">
+      <div class="container position-relative z-index-2">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
             <h1 class="text-white">Creando entornos más seguros para tu empresa</h1>
             <p class="lead mb-4 text-white opacity-8">Consultoría integral en Protección Civil, Medio Ambiente y Prevención de Riesgos con 30 años de experiencia.</p>
             <a href="/contacto.html?tipo=diagnostico" class="btn bg-gradient-success text-white me-2">Diagnóstico de Cumplimiento</a>
             <a href="/contacto.html?tipo=capacitacion" class="btn bg-gradient-info text-white ms-2">Cotizar Capacitación DC3</a>
-            <div class="d-flex justify-content-center mt-4">
-              <span class="badge bg-light text-dark mx-2">SINAPROCI</span>
-              <span class="badge bg-light text-dark mx-2">STPS</span>
-              <span class="badge bg-light text-dark mx-2">30 años</span>
-            </div>
             <h6 class="text-white mb-2 mt-5">Encuéntranos en:</h6>
             <div class="d-flex justify-content-center">
               <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
@@ -138,90 +164,99 @@ Designed by Diego Arana Ballesteros
       </div>
     </div>
   </header>
+  <section class="py-4 bg-light">
+    <div class="container">
+      <ul class="list-unstyled d-flex flex-column flex-md-row justify-content-around align-items-center text-center mb-0">
+        <li class="mb-3">
+          <a href="certificaciones.html#sinaproci" class="d-block text-decoration-none text-dark">
+            <span class="badge bg-light text-dark">SINAPROCI</span>
+            <small class="d-block text-muted">Registro vigente</small>
+          </a>
+        </li>
+        <li class="mb-3">
+          <a href="certificaciones.html#stps" class="d-block text-decoration-none text-dark">
+            <span class="badge bg-light text-dark">STPS</span>
+            <small class="d-block text-muted">Cumplimiento normativo</small>
+          </a>
+        </li>
+        <li class="mb-3">
+          <a href="certificaciones.html#canacintra" class="d-block text-decoration-none text-dark">
+            <span class="badge bg-light text-dark">CANACINTRA</span>
+            <small class="d-block text-muted">Afiliación empresarial</small>
+          </a>
+        </li>
+        <li class="mb-3">
+          <a href="certificaciones.html#coparmex" class="d-block text-decoration-none text-dark">
+            <span class="badge bg-light text-dark">COPARMEX</span>
+            <small class="d-block text-muted">Afiliación empresarial</small>
+          </a>
+        </li>
+        <li class="mb-3">
+          <span class="badge bg-light text-dark">30 años</span>
+          <small class="d-block text-muted">Experiencia comprobada</small>
+        </li>
+      </ul>
+    </div>
+  </section>
   <!-- -------- END HEADER 7 w/ text and video ------- -->
-  <!-- Section with four info areas left & one card right with image and waves -->
-  <section class="py-7">
+  <!-- Servicios destacados -->
+  <section class="py-7" id="servicios">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center mb-5">
-          <h2>Nuestros Servicios</h2>
+        <div class="col text-center mb-5">
+          <h2>Servicios destacados</h2>
         </div>
       </div>
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="row justify-content-start">
-            <div class="col-md-6">
-              <div class="info">
-                <div class="icon icon-shape text-center">
-                  <i class="fas fa-shield-alt text-danger mx-auto" style="font-size: 25px;"></i>
-
-
-
-                </div>
-                <h5>Programas Internos de Protección Civil</h5>
-                <p>Elaboramos y actualizamos programas internos y estudios de riesgo para cumplir con la normativa.</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="info">
-                <div class="icon icon-shape text-center">
-                  <i class="fas fa-hard-hat text-danger mx-auto" style="font-size: 25px;"></i>
-
-                </div>
-                <h5>Capacitación con constancia DC3</h5>
-                <p>Cursos y simulacros avalados por la STPS con emisión de constancias DC3.</p>
-              </div>
-            </div>
-          </div>
-          <div class=" row justify-content-start">
-            <div class="col-md-6">
-              <div class="info">
-                <div class="icon icon-shape text-center">
-                  <i class="fas fa-toolbox text-danger mx-auto" style="font-size: 25px;"></i>
-
-                </div>
-                <h5>Dictámenes e Inspecciones</h5>
-                <p>Revisiones estructurales, eléctricas y de gas para garantizar instalaciones seguras.</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="info">
-                <div class="icon icon-shape text-center">
-                  <i class="fas fa-leaf text-danger mx-auto" style="font-size: 25px;"></i>
-
-                </div>
-                <h5>Extintores, hidrantes y señalética</h5>
-                <p>Suministro y mantenimiento de equipo contra incendio y señalización de seguridad.</p>
-              </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Protección Civil</h5>
+              <p class="card-text flex-grow-1">Elaboramos y actualizamos programas internos y estudios de riesgo para cumplir con la normativa.</p>
+              <a href="servicios.html#proteccion-civil" class="btn bg-gradient-success mt-auto">Ver más</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
-          <div class="card shadow-lg">
-            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
-              <div class="d-block blur-shadow-image">
-                <img src="../assets/img/nuestros_servicios.jpg" alt="img-blur-shadow"
-                  class="img-fluid shadow rounded-3">
-              </div>
-              <div class="colored-shadow" style="background-image: url('../assets/img/nuestros_servicios.jpg');">
-              </div>
-            </div>
-            <div class="card-body">
-              <a href="servicios.html">
-                <h5 class="mt-3">
-                  Consulta todos nuestros servicios
-                </h5>
-              </a>
-              <!-- CTA button -->
-              <a href="#servicios" class="btn bg-gradient-success mt-3">Servicios</a>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Capacitación</h5>
+              <p class="card-text flex-grow-1">Cursos y simulacros avalados por la STPS con emisión de constancias DC3.</p>
+              <a href="servicios.html#capacitacion" class="btn bg-gradient-success mt-auto">Ver más</a>
             </div>
           </div>
         </div>
-
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dictámenes e Inspecciones</h5>
+              <p class="card-text flex-grow-1">Revisiones estructurales, eléctricas y de gas para garantizar instalaciones seguras.</p>
+              <a href="servicios.html#dictamenes-inspecciones" class="btn bg-gradient-success mt-auto">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Seguridad y Salud en el Trabajo (STPS)</h5>
+              <p class="card-text flex-grow-1">De normativas, incluyendo SINAPROCI, STPS, CANACINTRA y COPARMEX.</p>
+              <a href="servicios.html#stps" class="btn bg-gradient-success mt-auto">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Venta de Insumos y Señalética</h5>
+              <p class="card-text flex-grow-1">Suministro y mantenimiento de equipo contra incendio y señalización de seguridad.</p>
+              <a href="servicios.html#equipos-senaletica" class="btn bg-gradient-success mt-auto">Ver más</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- END Section with four info areas left & one card right with image and waves -->
+  <!-- END Servicios destacados -->
   <!-- -------- START Features w/ pattern background & stats & rocket -------- -->
   <section class="pt-sm-8 pb-5 position-relative bg-gradient-dark">
     <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
@@ -257,7 +292,7 @@ Designed by Diego Arana Ballesteros
               <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                 <a href="clientes.html">
                   <div class="p-3 pe-md-0">
-                    <img class="w-100 border-radius-md" src="../assets/img/cine_logo.jpeg" alt="image">
+                    <img class="w-100 border-radius-md" src="../assets/img/cine_logo.jpeg" alt="image" loading="lazy" decoding="async">
                   </div>
                 </a>
               </div>
@@ -279,7 +314,7 @@ Designed by Diego Arana Ballesteros
               <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                 <a href="clientes.html">
                   <div class="p-3 pe-md-0">
-                    <img class="w-100 border-radius-md" src="../assets/img/pepsico_logo.jpeg" alt="image">
+                    <img class="w-100 border-radius-md" src="../assets/img/pepsico_logo.jpeg" alt="image" loading="lazy" decoding="async">
                   </div>
                 </a>
               </div>
@@ -303,7 +338,7 @@ Designed by Diego Arana Ballesteros
               <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                 <a href="clientes.html">
                   <div class="p-3 pe-md-0">
-                    <img class="w-100 border-radius-md" src="../assets/img/ocesa_logo.jpg" alt="image">
+                    <img class="w-100 border-radius-md" src="../assets/img/ocesa_logo.jpg" alt="image" loading="lazy" decoding="async">
                   </div>
                 </a>
               </div>
@@ -324,7 +359,7 @@ Designed by Diego Arana Ballesteros
               <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
                 <a href="clientes.html">
                   <div class="p-3 pe-md-0">
-                    <img class="w-100 border-radius-md" src="../assets/img/fia_logo.svg" alt="image">
+                    <img class="w-100 border-radius-md" src="../assets/img/fia_logo.svg" alt="image" loading="lazy" decoding="async">
                   </div>
                 </a>
               </div>
@@ -361,23 +396,23 @@ Designed by Diego Arana Ballesteros
   <section class="pt-2 pb-6 bg-gray-100" id="count-stats">
     <div class="container">
       <div class="row mb-7">
-        <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3000 }'>
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/fia_logo.svg"
-              alt="Logo 1"></div>
+              alt="Logo 1" loading="lazy" decoding="async"></div>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/ocesa_logo.jpg"
-              alt="Logo 2"></div>
+              alt="Logo 2" loading="lazy" decoding="async"></div>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/pepsico_logo.jpeg"
-              alt="Logo 3"></div>
+              alt="Logo 3" loading="lazy" decoding="async"></div>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/cine_logo.jpeg"
-              alt="Logo 4"></div>
+              alt="Logo 4" loading="lazy" decoding="async"></div>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/city_logo.jpg"
-              alt="Logo 5"></div>
+              alt="Logo 5" loading="lazy" decoding="async"></div>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/bachoco_logo.webp"
-              alt="Logo 6"></div>
+              alt="Logo 6" loading="lazy" decoding="async"></div>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/famsa_logo.png"
-              alt="Logo 7"></div>
+              alt="Logo 7" loading="lazy" decoding="async"></div>
           <div class="carousel-cell"><img class="img-fluid shadow rounded-3" src="../assets/img/hellman_logo.png"
-              alt="Logo 8"></div>
+              alt="Logo 8" loading="lazy" decoding="async"></div>
 
         </div>
       </div>
@@ -423,7 +458,7 @@ Designed by Diego Arana Ballesteros
           <div class="position-relative">
             <div class="d-block blur-shadow-image">
               <img class="max-width-50 w-100 position-relative z-index-2 img-fluid shadow rounded-3"
-                alt="img-blur-shadow2" src="../assets/img/index_prot.png">
+                alt="img-blur-shadow2" src="../assets/img/index_prot.png" loading="lazy" decoding="async">
 
             </div>
           </div>
@@ -511,18 +546,18 @@ Designed by Diego Arana Ballesteros
     </div>
   </footer>
   <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/core/popper.min.js" type="text/javascript" defer></script>
+  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript" defer></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js" defer></script>
   <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
-  <script src="../assets/js/plugins/countup.min.js"></script>
+  <script src="../assets/js/plugins/countup.min.js" defer></script>
   <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
-  <script src="../assets/js/plugins/parallax.min.js"></script>
+  <script src="../assets/js/plugins/parallax.min.js" defer></script>
   <!-- Control Center for Soft UI Kit: parallax effects, scripts for the example pages etc -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
-  <script src="../assets/js/soft-design-system.min.js?v=1.0.9" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI" defer></script>
+  <script src="../assets/js/soft-design-system.min.js?v=1.0.9" type="text/javascript" defer></script>
   <!--Flickity init-->
   <script>
     var elem = document.querySelector('.carousel');
