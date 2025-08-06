@@ -1,0 +1,23 @@
+// GyG brand tokens (TODO: update once logo HEX is final)
+$primary:  #0B1F36 !default; // nav/links/buttons
+$success:  #2E7D32 !default; // OK/compliance
+$warning:  #FFB300 !default; // caution
+$danger:   #C62828 !default; // emergency/fire
+$info:     #147AD6 !default; // info/mandatory
+$body-bg:  #FFFFFF !default;
+$body-color: #314054 !default;
+$headings-color: #0B1F36 !default;
+$btn-border-radius: .75rem !default;
+
+// Typography
+$font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$headings-font-family: "Montserrat", $font-family-base;
+
+// Base sizes and spacing
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Links & visible focus
+$link-color: $primary;
+$link-hover-color: darken($primary, 7%);
+$focus-ring-color: rgba($primary, .25);
