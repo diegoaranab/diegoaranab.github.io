@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Contacto - GyG Protección Civil</title>
-  <link href="../assets/css/soft-design-system.css?v=1.0.9" rel="stylesheet" />
+  <meta name="description" content="Contáctanos: email, teléfono y ubicación. Formulario con tipos de solicitud.">
+  <link href="assets/css/soft-design-system.css?v=1.0.9" rel="stylesheet" />
   <style>
     .navbar-nav .nav-link:focus-visible { outline: 2px dashed #fff; outline-offset:2px; }
   </style>
@@ -15,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-dark z-index-3 py-3 sticky-top">
       <div class="container">
         <a class="navbar-brand text-white" href="index.html" rel="tooltip" title="GyG Protección Civil" data-placement="bottom">GyG Protección Civil</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Mostrar navegación">
           <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27rgba(255, 255, 255, 1)%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
         </button>
         <div class="collapse navbar-collapse" id="navigation">
@@ -30,7 +31,7 @@
             <li class="nav-item px-3"><a class="nav-link text-white opacity-8" href="contacto.html">Contacto</a></li>
           </ul>
           <ul class="navbar-nav ms-auto">
-            <button class="btn bg-gradient-success mb-0">Contáctanos</button>
+            <li class="nav-item"><a class="btn bg-gradient-success mb-0" href="contacto.html">Contáctanos</a></li>
           </ul>
         </div>
       </div>
@@ -39,43 +40,98 @@
     <section class="py-5">
       <div class="container">
         <h1>Contacto</h1>
-        <form action="#" method="post" class="row g-3" aria-label="Formulario de contacto">
-          <div class="col-md-6">
-            <label for="tipo" class="form-label">Tipo de solicitud</label>
-            <select id="tipo" name="tipo" class="form-select" aria-label="Tipo de solicitud">
-              <option value="Diagnóstico">Diagnóstico</option>
-              <option value="Capacitación">Capacitación</option>
-              <option value="Dictámenes e Inspecciones">Dictámenes e Inspecciones</option>
-              <option value="STPS">STPS</option>
-              <option value="Equipos">Equipos</option>
-              <option value="Otro">Otro</option>
-            </select>
+        <div class="row mt-4">
+          <div class="col-md-4 mb-4">
+            <h2 class="h5">Datos de contacto</h2>
+            <ul class="list-unstyled">
+              <li><strong>Email:</strong> distgyg@hotmail.com</li>
+              <li><strong>Teléfono:</strong> 238 1-09-22-60</li>
+              <li><strong>Ubicación:</strong> Tehuacán, Puebla</li>
+            </ul>
           </div>
-          <div class="col-md-6">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" id="nombre" name="nombre" class="form-control" aria-label="Nombre">
+          <div class="col-md-8">
+            <form id="contact-form" action="#" method="post" class="row g-3" novalidate>
+              <div id="form-errors" class="col-12 alert alert-danger d-none" role="alert" tabindex="-1"></div>
+              <div class="col-md-6">
+                <label for="tipo" class="form-label">Tipo de solicitud</label>
+                <select id="tipo" name="tipo" class="form-select" required aria-describedby="error-tipo">
+                  <option value="" selected disabled>Selecciona una opción</option>
+                  <option>Diagnóstico / Programa interno</option>
+                  <option>Capacitación (DC3, incendios, primeros auxilios con DEA, etc.)</option>
+                  <option>Inspecciones / Dictámenes</option>
+                  <option>STPS</option>
+                  <option>Venta de equipos</option>
+                  <option>Otro</option>
+                </select>
+                <div id="error-tipo" class="text-danger"></div>
+              </div>
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required aria-describedby="error-nombre">
+                <div id="error-nombre" class="text-danger"></div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required aria-describedby="error-email">
+                <div id="error-email" class="text-danger"></div>
+              </div>
+              <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="form-control" required inputmode="tel" autocomplete="tel" aria-describedby="error-telefono">
+                <div id="error-telefono" class="text-danger"></div>
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required aria-describedby="error-mensaje"></textarea>
+                <div id="error-mensaje" class="text-danger"></div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn bg-gradient-success">Enviar</button>
+              </div>
+            </form>
           </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" name="email" class="form-control" aria-label="Correo electrónico">
-          </div>
-          <div class="col-md-6">
-            <label for="telefono" class="form-label">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" class="form-control" aria-label="Teléfono">
-          </div>
-          <div class="col-12">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" class="form-control" rows="4" aria-label="Mensaje"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn bg-gradient-success">Enviar</button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <script src="../assets/js/core/bootstrap.min.js" defer></script>
+  <footer class="footer py-3 mt-5 border-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <span class="text-muted">© GyG Protección Civil</span>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link px-2 text-muted" href="aviso-de-privacidad.html">Aviso de Privacidad</a></li>
+        <li class="nav-item"><a class="nav-link px-2 text-muted" href="terminos.html">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/core/bootstrap.min.js" defer></script>
+  <script>
+  (function() {
+    const form = document.getElementById('contact-form');
+    const summary = document.getElementById('form-errors');
+    form.addEventListener('submit', function (e) {
+      let errors = [];
+      ['tipo','nombre','email','telefono','mensaje'].forEach(function(id) {
+        const field = document.getElementById(id);
+        const errorEl = document.getElementById('error-' + id);
+        if (!field.value || (field.type === 'email' && !field.validity.valid)) {
+          field.setAttribute('aria-invalid', 'true');
+          errorEl.textContent = 'Campo obligatorio';
+          errors.push(field.labels[0].textContent);
+        } else {
+          field.removeAttribute('aria-invalid');
+          errorEl.textContent = '';
+        }
+      });
+      if (errors.length) {
+        e.preventDefault();
+        summary.textContent = 'Por favor corrige: ' + errors.join(', ');
+        summary.classList.remove('d-none');
+        summary.focus();
+      }
+    });
+  })();
+  </script>
 </body>
 </html>
-
