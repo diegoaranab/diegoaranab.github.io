@@ -1,14 +1,13 @@
 @charset "UTF-8";
 :root {
-  --gyg-navy: #0B1F36;
-  --gyg-orange: #FF6A00;
-  --gyg-red: #C62828;
-  --gyg-green: #2E7D32;
-  --gyg-gray-50: #F3F4F6;
-  --gyg-gray-400: #9AA4B2;
+  --gyg-navy:#0B1F36;
+  --gyg-orange:#FF6A00;
+  --gyg-red:#C62828;
+  --gyg-green:#2E7D32;
+  --gyg-gray-50:#F3F4F6;
+  --gyg-gray-400:#9AA4B2;
 }
 
-/* Simple utilities to reduce custom CSS elsewhere */
 .text-navy {
   color: var(--gyg-navy) !important;
 }
@@ -28,6 +27,14 @@
 .border-left-orange {
   border-left: 0.25rem solid var(--gyg-orange) !important;
   padding-left: 0.75rem;
+}
+
+.hover-shadow {
+  transition: box-shadow 0.2s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 :focus-visible {
@@ -132,17 +139,32 @@
   flex: 1 1 auto;
 }
 
-.hover-shadow {
-  transition: box-shadow 0.2s ease;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
 .carousel-cell {
   margin-right: var(--carousel-gap);
 } /* match when Flickity is active */
+.services-grid .col, .services-grid [class*=col-] {
+  display: flex;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 1rem;
+}
+
+.service-card.h-100 {
+  height: 100%;
+}
+
+.service-card .service-body {
+  flex: 1 1 auto;
+}
+
+.service-card .btn {
+  margin-top: auto;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -214,7 +236,7 @@
   --bs-border-radius-2xl: 1.5rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #0B1F36;
-  --bs-link-hover-color: rgb(4.9584615385, 13.9738461538, 24.3415384615);
+  --bs-link-hover-color: black;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fcf8e3;
 }
@@ -3655,9 +3677,9 @@ textarea.form-control-lg {
   --bs-btn-color: #0B1F36;
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
-  --bs-btn-hover-color: rgb(4.9584615385, 13.9738461538, 24.3415384615);
+  --bs-btn-hover-color: black;
   --bs-btn-hover-border-color: transparent;
-  --bs-btn-active-color: rgb(4.9584615385, 13.9738461538, 24.3415384615);
+  --bs-btn-active-color: black;
   --bs-btn-active-border-color: transparent;
   --bs-btn-disabled-color: #6c757d;
   --bs-btn-disabled-border-color: transparent;
@@ -5041,10 +5063,10 @@ textarea.form-control-lg {
   --bs-pagination-border-width: 1px;
   --bs-pagination-border-color: #dee2e6;
   --bs-pagination-border-radius: 0.5rem;
-  --bs-pagination-hover-color: rgb(4.9584615385, 13.9738461538, 24.3415384615);
+  --bs-pagination-hover-color: black;
   --bs-pagination-hover-bg: #e9ecef;
   --bs-pagination-hover-border-color: #dee2e6;
-  --bs-pagination-focus-color: rgb(4.9584615385, 13.9738461538, 24.3415384615);
+  --bs-pagination-focus-color: black;
   --bs-pagination-focus-bg: #e9ecef;
   --bs-pagination-focus-box-shadow: 0 0 0 0.2rem rgba(11, 31, 54, 0.25);
   --bs-pagination-active-color: #fff;

@@ -78,6 +78,4 @@
 /* Ensure columns stretch to equal height within the row */
 .col-lg-6.d-flex > .card.card-profile { flex: 1 1 auto; }
 
-.hover-shadow { transition: box-shadow .2s ease; }
-.hover-shadow:hover { box-shadow: 0 8px 24px rgba(0,0,0,.12); }
 .carousel-cell { margin-right: var(--carousel-gap); } /* match when Flickity is active */
