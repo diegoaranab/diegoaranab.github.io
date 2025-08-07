@@ -527,29 +527,33 @@ Designed by Diego Arana Ballesteros
   <script src="assets/js/plugins/countup.min.js" defer></script>
   <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
   <script src="assets/js/plugins/parallax.min.js" defer></script>
-  <!-- Control Center for Soft UI Kit: parallax effects, scripts for the example pages etc -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI" defer></script>
+  <!-- Control Center for Soft UI Kit: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/soft-design-system.min.js?v=1.0.9" type="text/javascript" defer></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!--Flickity init-->
   <script>
-    (function () {
-      var elem = document.querySelector('.carousel');
-      if (!elem || typeof Flickity === 'undefined') return; // graceful fallback
+  (function () {
+    var elem = document.querySelector('.carousel');
+    if (!elem) return;
+
+    function initFlickity() {
+      if (typeof Flickity === 'undefined') return false;
 
       var flkty = new Flickity(elem, {
         wrapAround: true,
-        autoPlay: 3000,
-        pauseAutoPlayOnHover: true,
+        autoPlay: 3000,                 // autoplay (ms)
+        pauseAutoPlayOnHover: true,     // pause on hover
         setGallerySize: true,
         cellAlign: 'left',
         contain: true,
-        imagesLoaded: true,   // reposition after images load
+        imagesLoaded: true,             // ensure layout after images load
         pageDots: false,
         prevNextButtons: false
       });
 
+      // Wire up controls (if present)
       var prevBtn = document.querySelector('.carousel-prev');
       var nextBtn = document.querySelector('.carousel-next');
       var toggleBtn = document.querySelector('.carousel-toggle');
@@ -558,17 +562,21 @@ Designed by Diego Arana Ballesteros
       if (prevBtn) prevBtn.addEventListener('click', function () { flkty.previous(); });
       if (nextBtn) nextBtn.addEventListener('click', function () { flkty.next(); });
       if (toggleBtn) toggleBtn.addEventListener('click', function () {
-        if (isPaused) {
-          flkty.playPlayer(); toggleBtn.setAttribute('aria-pressed', 'false'); toggleBtn.textContent = 'Pausar';
-        } else {
-          flkty.pausePlayer(); toggleBtn.setAttribute('aria-pressed', 'true');  toggleBtn.textContent = 'Reanudar';
-        }
+        if (isPaused) { flkty.playPlayer(); toggleBtn.setAttribute('aria-pressed','false'); toggleBtn.textContent = 'Pausar'; }
+        else { flkty.pausePlayer(); toggleBtn.setAttribute('aria-pressed','true'); toggleBtn.textContent = 'Reanudar'; }
         isPaused = !isPaused;
       });
 
-      /* A11y: stop autoplay on keyboard focus */
+      // Accessibility: stop autoplay when focused per WAI APG
       elem.addEventListener('focusin', function () { flkty.pausePlayer(); });
-    })();
+      return true;
+    }
+
+    // Initialize after DOM is ready
+    if (!initFlickity()) {
+      window.addEventListener('load', function(){ initFlickity(); });
+    }
+  })();
   </script>
   <script>
     if (document.getElementsByClassName('page-header')) {
