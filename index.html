@@ -104,43 +104,23 @@ Designed by Diego Arana Ballesteros
 
   <!-- End Navbar -->
 
-  <!-- -------- START HEADER 7 w/ text and video ------- -->
-  <section class="py-7 bg-gradient-dark position-relative overflow-hidden">
-    <span class="mask bg-gradient-info opacity-8"></span>
-    <img src="assets/img/index_hero.jpg" width="1555" height="1036" alt="Personal en capacitación" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" fetchpriority="high">
-    <div class="container position-relative z-index-2">
+    <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image:url('assets/img/index_hero.jpg');">
+      <span class="mask hero-mask opacity-8"></span>
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-          <h1 class="display-5 fw-bold text-white">Creando entornos más seguros para tu empresa</h1>
-          <p class="text-white-50 mb-4">Consultoría integral en Protección Civil, Medio Ambiente y Prevención de Riesgos con 30 años de experiencia.</p>
-          <a href="/contacto.html?tipo=diagnostico" class="btn btn-secondary me-2">Diagnóstico de Cumplimiento</a>
-          <a class="btn btn-secondary shadow-sm ms-2" href="capacitacion-dc3.html" aria-label="Cotizar capacitación DC3">Cotizar capacitación DC3</a>
-            <h6 class="text-white mb-2 mt-5">Encuéntranos en:</h6>
-            <div class="d-flex justify-content-center">
-              <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
-              <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
-              <a href="https://wa.me/522381092260" aria-label="WhatsApp"><i class="fab fa-whatsapp text-lg text-white me-4"></i></a>
+            <h1 class="display-5 fw-bold text-white">Creando entornos más seguros para tu empresa</h1>
+            <p class="text-white-50 mb-4">Consultoría integral en Protección Civil, Medio Ambiente y Prevención de Riesgos con 30 años de experiencia.</p>
+            <div class="mt-4 d-flex gap-2 flex-wrap justify-content-center">
+              <a href="contacto.html#diagnostico" class="btn btn-primary shadow-sm">Diagnóstico de cumplimiento</a>
+              <a href="capacitacion-dc3.html" class="btn btn-outline-secondary">Cotizar capacitación DC3</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="position-absolute w-100 z-index-1 bottom-0">
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
-          <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-          </defs>
-          <g class="moving-waves">
-            <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
-            <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
-            <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
-            <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1" />
-          </g>
-        </svg>
-      </div>
-  </section>
+    </div>
+  </header>
   <section class="py-4 bg-light">
     <div class="container">
       <ul class="list-unstyled d-flex flex-column flex-md-row justify-content-around align-items-center text-center mb-0">
@@ -175,7 +155,6 @@ Designed by Diego Arana Ballesteros
       </ul>
     </div>
   </section>
-  <!-- -------- END HEADER 7 w/ text and video ------- -->
   <!-- Servicios destacados -->
   <section class="py-7" id="servicios">
     <div class="container">
@@ -262,7 +241,7 @@ Designed by Diego Arana Ballesteros
             para sus necesidades de seguridad.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row g-4 home-trust">
         <div class="col-lg-6 col-12 d-flex">
           <div class="card card-profile overflow-hidden h-100 hover-shadow">
             <div class="row align-items-center">
@@ -278,14 +257,14 @@ Designed by Diego Arana Ballesteros
                   <p class="mb-0">La cadena de cines más grande de América Latina. Proveemos soluciones de seguridad
                     para sus instalaciones y eventos, garantizando la protección de empleados y clientes.
                   </p>
-                  <a class="btn btn-secondary mt-auto" href="casos.html#Cinepolis">Ver caso</a>
+                  <!-- CTA eliminado por requerimiento -->
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-12 d-flex">
-          <div class="card card-profile mt-lg-0 mt-5 overflow-hidden h-100 hover-shadow">
+          <div class="card card-profile overflow-hidden h-100 hover-shadow">
             <div class="row align-items-center">
               <div class="col-md-4 p-3 pe-md-0">
                 <div class="client-logo-box">
@@ -299,14 +278,12 @@ Designed by Diego Arana Ballesteros
                   <p>Multinacional líder en alimentos y bebidas. Implementamos programas de protección civil y seguridad
                     en sus plantas y oficinas.
                   </p>
-                  <a class="btn btn-secondary mt-auto" href="casos.html#PepsiCo">Ver caso</a>
+                  <!-- CTA eliminado por requerimiento -->
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row mt-4">
         <div class="col-lg-6 col-12 d-flex">
           <div class="card card-profile overflow-hidden z-index-2 h-100 hover-shadow">
             <div class="row align-items-center">
@@ -321,14 +298,14 @@ Designed by Diego Arana Ballesteros
                   <h6 class="text-info">Entretenimiento y Producción de Eventos</h6>
                   <p>Líder en la organización de conciertos y eventos masivos en México. Proveemos consultoría en
                     seguridad y simulacros para eventos con gran afluencia de público.</p>
-                  <a class="btn btn-secondary mt-auto" href="casos.html#OCESA">Ver caso</a>
+                  <!-- CTA eliminado por requerimiento -->
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-12 d-flex">
-          <div class="card card-profile mt-lg-0 mt-5 overflow-hidden z-index-2 h-100 hover-shadow">
+          <div class="card card-profile overflow-hidden z-index-2 h-100 hover-shadow">
             <div class="row align-items-center">
               <div class="col-md-4 p-3 pe-md-0">
                 <div class="client-logo-box">
@@ -341,7 +318,7 @@ Designed by Diego Arana Ballesteros
                   <h6 class="text-info">Deportes Automovilísticos</h6>
                   <p>Organiza eventos como Fórmula 1 y Fórmula E. Aseguramos la seguridad en eventos internacionales,
                     protegiendo tanto a participantes como al público.</p>
-                  <a class="btn btn-secondary mt-auto" href="casos.html#FIA">Ver caso</a>
+                  <!-- CTA eliminado por requerimiento -->
                 </div>
               </div>
             </div>
@@ -439,68 +416,57 @@ Designed by Diego Arana Ballesteros
   <footer class="footer pt-5 mt-5">
     <hr class="horizontal dark mb-5">
     <div class="container">
-      <div class="row">
-              <div class="col-md-3 mb-4 ms-auto">
-        <div>
-          <h6 class="text-gradient text-danger font-weight-bolder">GyG Protección Civil</h6>
+      <div class="row gy-4 gy-md-5 footer">
+        <div class="col-md-3 mb-4 ms-auto">
+          <div>
+            <h6 class="text-gradient text-danger font-weight-bolder">GyG Protección Civil</h6>
+          </div>
+          <div>
+            <p class="mt-2 mb-0 opacity-8">distgyg@hotmail.com · 238 1-09-22-60</p>
+            <p class="mb-0 opacity-8">Tehuacán, Puebla</p>
+            <p class="mt-3 mb-2 opacity-8">Calle 2 Norte #406 Colonia Centro</p>
+            <h6 class="mt-3 mb-2 opacity-8">Redes Sociales</h6>
+            <ul class="d-flex list-unstyled">
+              <li class="me-3">
+                <a href="https://www.facebook.com/profile.php?id=100031771015967" target="_blank" rel="noopener" aria-label="Facebook">
+                  <i class="fab fa-facebook text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/522381092260" target="_blank" rel="noopener" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp text-lg opacity-8"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p class="mt-2 mb-0 opacity-8">distgyg@hotmail.com · 238 1-09-22-60</p>
-          <p class="mb-0 opacity-8">Tehuacán, Puebla</p>
-          <p class="mt-3 mb-2 opacity-8">Calle 2 Norte #406 Colonia Centro</p>
-          <h6 class="mt-3 mb-2 opacity-8">Redes Sociales</h6>
-          <ul class="d-flex flex-row ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://www.facebook.com/profile.php?id=100031771015967" target="_blank" rel="noopener" aria-label="Facebook">
-                <i class="fab fa-facebook text-lg opacity-8"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
-                <i class="fab fa-instagram text-lg opacity-8"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://wa.me/522381092260" target="_blank" rel="noopener" aria-label="WhatsApp">
-                <i class="fab fa-whatsapp text-lg opacity-8"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank" rel="noopener" aria-label="YouTube">
-                <i class="fab fa-youtube text-lg opacity-8"></i>
-              </a>
-            </li>
-          </ul>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-gradient text-danger text-sm">Navegación</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="industrias.html">Industrias</a></li>
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="certificaciones.html">Certificaciones</a></li>
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="casos.html">Casos/Clientes</a></li>
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="recursos.html">Recursos</a></li>
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link p-0 text-dark" href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-md-2 col-sm-6 col-6 mb-4">
-        <div>
-          <h6 class="text-gradient text-danger text-sm">Navegación</h6>
-          <ul class="flex-column ps-0">
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="industrias.html">Industrias</a></li>
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="certificaciones.html">Certificaciones</a></li>
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="casos.html">Casos/Clientes</a></li>
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="recursos.html">Recursos</a></li>
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link text-dark p-0" href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-12">
+        <div class="col-12">
           <div class="text-center">
             <p class="my-4 text-sm">
               Derechos Reservados ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script>
+              <script>document.write(new Date().getFullYear())</script>
             </p>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
   <!--   Core JS Files   -->
   <script src="assets/js/core/popper.min.js" type="text/javascript" defer></script>
   <script src="assets/js/core/bootstrap.min.js" type="text/javascript" defer></script>
