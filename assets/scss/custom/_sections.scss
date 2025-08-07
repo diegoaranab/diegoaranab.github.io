@@ -1,0 +1,6 @@
+// === Servicios cards ===
+.services-grid .col, .services-grid [class*="col-"]{display:flex;}
+.service-card{display:flex;flex-direction:column;gap:.75rem;border-radius:1rem;}
+.service-card.h-100{height:100%;}
+.service-card .service-body{flex:1 1 auto;}
+.service-card .btn{margin-top:auto;}
