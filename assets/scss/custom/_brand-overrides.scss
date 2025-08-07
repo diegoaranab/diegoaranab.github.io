@@ -1,23 +1,39 @@
-// Tokens de marca (valores de ejemplo, ajustar con la paleta final)
-$primary:  #0B1F36 !default; // nav/links/buttons
-$success:  #2E7D32 !default; // OK/compliance
-$warning:  #995f00 !default; // caution
-$danger:   #C62828 !default; // emergency/fire
-$info:     #0f6bc7 !default; // info/mandatory
+// === GyG provisional palette (to be validated with final logo) ===
+$primary:  #0B1F36 !default; // Navy / Dark Blue (trust/authority)
+$secondary:#FF6A00 !default; // Safety Orange (accents/secondary CTAs)
+$success:  #2E7D32 !default; // Compliance/OK
+$warning:  #FFB300 !default; // Amber warnings
+$danger:   #C62828 !default; // Emergency/Fire
+$info:     #0F6BC7 !default; // Info/mandatory
 $body-bg:  #FFFFFF !default;
 $body-color: #314054 !default;
 $headings-color: #0B1F36 !default;
 $btn-border-radius: .75rem !default;
 
-// Typography
-$font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+// === Typography (Montserrat for headings, Inter for body) ===
+$font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 $headings-font-family: "Montserrat", $font-family-base;
-
-// Base sizes and spacing
 $font-size-base: 1rem;
 $line-height-base: 1.6;
 
-// Links & visible focus
+// === Links & focus ===
 $link-color: $primary;
 $link-hover-color: darken($primary, 7%);
 $focus-ring-color: rgba($primary, .25);
+
+// === CSS custom properties for quick theming in markup ===
+:root {
+  --gyg-navy: #0B1F36;
+  --gyg-orange: #FF6A00;
+  --gyg-red: #C62828;
+  --gyg-green: #2E7D32;
+  --gyg-gray-50: #F3F4F6;
+  --gyg-gray-400: #9AA4B2;
+}
+
+/* Simple utilities to reduce custom CSS elsewhere */
+.text-navy { color: var(--gyg-navy) !important; }
+.text-orange { color: var(--gyg-orange) !important; }
+.bg-navy { background-color: var(--gyg-navy) !important; }
+.bg-gray-50 { background-color: var(--gyg-gray-50) !important; }
+.border-left-orange { border-left: .25rem solid var(--gyg-orange) !important; padding-left: .75rem; }

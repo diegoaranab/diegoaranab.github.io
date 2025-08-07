@@ -14,7 +14,9 @@ Designed by Diego Arana Ballesteros
     GyG Protección Civil
   </title>
   <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <!-- Nucleo Icons -->
   <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
@@ -103,17 +105,16 @@ Designed by Diego Arana Ballesteros
   <!-- End Navbar -->
 
   <!-- -------- START HEADER 7 w/ text and video ------- -->
-  <header class="bg-gradient-dark">
-    <div class="page-header min-vh-75 position-relative">
-      <span class="mask bg-gradient-info opacity-8"></span>
-      <img src="assets/img/index_hero.jpg" width="1555" height="1036" alt="Personal en capacitación" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" fetchpriority="high">
-      <div class="container position-relative z-index-2">
+  <section class="py-7 bg-gradient-dark position-relative overflow-hidden">
+    <span class="mask bg-gradient-info opacity-8"></span>
+    <img src="assets/img/index_hero.jpg" width="1555" height="1036" alt="Personal en capacitación" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;" fetchpriority="high">
+    <div class="container position-relative z-index-2">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-            <h1 class="text-white">Creando entornos más seguros para tu empresa</h1>
-            <p class="lead mb-4 text-white opacity-8">Consultoría integral en Protección Civil, Medio Ambiente y Prevención de Riesgos con 30 años de experiencia.</p>
-            <a href="/contacto.html?tipo=diagnostico" class="btn bg-gradient-success text-white me-2">Diagnóstico de Cumplimiento</a>
-            <a href="/contacto.html?tipo=capacitacion" class="btn bg-gradient-info text-white ms-2">Cotizar Capacitación DC3</a>
+          <h1 class="display-5 fw-bold text-white">Creando entornos más seguros para tu empresa</h1>
+          <p class="text-white-50 mb-4">Consultoría integral en Protección Civil, Medio Ambiente y Prevención de Riesgos con 30 años de experiencia.</p>
+          <a href="/contacto.html?tipo=diagnostico" class="btn btn-secondary me-2">Diagnóstico de Cumplimiento</a>
+          <a href="/contacto.html?tipo=capacitacion" class="btn btn-outline-light ms-2">Cotizar Capacitación DC3</a>
             <h6 class="text-white mb-2 mt-5">Encuéntranos en:</h6>
             <div class="d-flex justify-content-center">
               <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
@@ -139,8 +140,7 @@ Designed by Diego Arana Ballesteros
           </g>
         </svg>
       </div>
-    </div>
-  </header>
+  </section>
   <section class="py-4 bg-light">
     <div class="container">
       <ul class="list-unstyled d-flex flex-column flex-md-row justify-content-around align-items-center text-center mb-0">
