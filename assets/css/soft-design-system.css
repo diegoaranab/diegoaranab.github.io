@@ -68,6 +68,39 @@
   margin-right: var(--carousel-gap);
 }
 
+/* === Feature cards (Clientes que confían en nosotros) === */
+.clients-cards .card.card-profile {
+  height: 100%;
+}
+
+.clients-cards .card.card-profile .row {
+  height: 100%;
+}
+
+/* Fixed visual box for logos, independent of source image size */
+.client-logo-box {
+  width: 100%;
+  aspect-ratio: 1/1; /* square; change to 4/3 if preferred */
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.client-logo-img {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain; /* scale without distortion */
+}
+
+/* Ensure columns stretch to equal height within the row */
+.col-lg-6.d-flex > .card.card-profile {
+  flex: 1 1 auto;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
