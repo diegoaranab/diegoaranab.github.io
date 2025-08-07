@@ -1,27 +1,23 @@
-// === GyG provisional palette (to validate with final logo) ===
-$primary:  #0B1F36 !default; // Navy (trust/authority)
-$secondary:#FF6A00 !default; // Safety Orange (accents/secondary CTAs)
-$success:  #2E7D32 !default; // Compliance/OK
-$warning:  #FFB300 !default; // Amber warnings
-$danger:   #C62828 !default; // Emergency/Fire
+// === GyG provisional palette ===
+$primary:  #0B1F36 !default; // Navy (primary CTA, headers, links)
+$secondary:#FF6A00 !default; // Safety Orange (secondary/accents)
+$success:  #2E7D32 !default; // Compliance
+$warning:  #FFB300 !default; // Warnings
+$danger:   #C62828 !default; // Emergency
 $info:     #0F6BC7 !default;
 
-$body-bg:  #FFFFFF !default;
+$body-bg: #fff !default;
 $body-color: #314054 !default;
 $headings-color: #0B1F36 !default;
 
+// Typography
 $font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 $headings-font-family: "Montserrat", $font-family-base;
-$font-size-base: 1rem;
-$line-height-base: 1.6;
 
-// Buttons/Elevation (Soft UI look)
-$btn-border-radius: .75rem !default;
-
-// Expose CSS vars for quick accents
-:root{
-  --gyg-navy:#0B1F36; --gyg-orange:#FF6A00; --gyg-red:#C62828; --gyg-green:#2E7D32;
-  --gyg-gray-50:#F3F4F6; --gyg-gray-400:#9AA4B2;
+// GyG CSS vars & helpers
+:root {
+  --gyg-navy:#0B1F36; --gyg-orange:#FF6A00; --gyg-green:#2E7D32;
+  --gyg-red:#C62828; --gyg-gray-50:#F3F4F6; --gyg-gray-400:#9AA4B2;
 }
 .text-navy{color:var(--gyg-navy)!important;}
 .text-orange{color:var(--gyg-orange)!important;}
@@ -30,3 +26,15 @@ $btn-border-radius: .75rem !default;
 .border-left-orange{border-left:.25rem solid var(--gyg-orange)!important;padding-left:.75rem;}
 .hover-shadow{transition:box-shadow .2s ease;}
 .hover-shadow:hover{box-shadow:0 8px 24px rgba(0,0,0,.12);}
+
+/* Button tokens mapped to our palette (keeps Bootstrap API) */
+.btn-primary{
+  --bs-btn-bg:#0B1F36; --bs-btn-border-color:#0B1F36;
+  --bs-btn-hover-bg:#0d2746; --bs-btn-hover-border-color:#0d2746;
+  --bs-btn-color:#fff; --bs-btn-hover-color:#fff;
+}
+.btn-outline-secondary{
+  --bs-btn-color:#FF6A00; --bs-btn-border-color:#FF6A00;
+  --bs-btn-hover-bg:#FF6A00; --bs-btn-hover-border-color:#FF6A00;
+  --bs-btn-hover-color:#fff;
+}
