@@ -1,8 +1,19 @@
-/* Hero mask for legibility on photos */
+/* ===== Hero mask (readability) =====
+   Keep the waves visible and add a subtle gradient+blur mask for legibility */
 .hero-mask{
   background: linear-gradient(135deg, rgba(11,31,54,.92) 0%, rgba(11,31,54,.68) 55%, rgba(11,31,54,.85) 100%);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /* widely supported now */
 }
+
+/* ===== Waves tint option (brand-friendly) =====
+   Leave white by default; uncomment the block below if you want Navy-tinted waves.
+.waves .moving-waves use:nth-child(1){ fill: rgba(255,255,255,.40); }
+.waves .moving-waves use:nth-child(2){ fill: rgba(255,255,255,.35); }
+.waves .moving-waves use:nth-child(3){ fill: rgba(255,255,255,.25); }
+.waves .moving-waves use:nth-child(4){ fill: rgba(255,255,255,.20); }
+.waves .moving-waves use:nth-child(5){ fill: rgba(255,255,255,.15); }
+.waves .moving-waves use:nth-child(6){ fill: rgba(255,255,255,.10); }
+*/
 
 // === Servicios cards ===
 .services-grid .col, .services-grid [class^="col-"], .services-grid [class*=" col-"] { display:flex; }
@@ -15,4 +26,13 @@
 .footer .nav .nav-link{ padding:.125rem 0; }
 @media (min-width:768px) and (max-width:991.98px){
   .footer [class*="col-"]{ margin-bottom:.5rem; }
+}
+
+/* Force body font for typical content blocks */
+.card p,
+.card .card-description,
+.card .text-muted,
+.client-description,
+.trust-card p {
+  font-family: var(--bs-body-font-family) !important;
 }
