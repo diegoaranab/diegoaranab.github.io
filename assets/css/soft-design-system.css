@@ -6,6 +6,7 @@
   --gyg-red:#C62828;
   --gyg-gray-50:#F3F4F6;
   --gyg-gray-400:#9AA4B2;
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .text-navy {
@@ -160,14 +161,23 @@
 .carousel-cell {
   margin-right: var(--carousel-gap);
 } /* match when Flickity is active */
-/* Hero mask for legibility on photos */
+/* ===== Hero mask (readability) =====
+   Keep the waves visible and add a subtle gradient+blur mask for legibility */
 .hero-mask {
   background: linear-gradient(135deg, rgba(11, 31, 54, 0.92) 0%, rgba(11, 31, 54, 0.68) 55%, rgba(11, 31, 54, 0.85) 100%);
   -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px); /* widely supported now */
 }
 
-/* Servicios grid: equal-height cards */
+/* ===== Waves tint option (brand-friendly) =====
+   Leave white by default; uncomment the block below if you want Navy-tinted waves.
+.waves .moving-waves use:nth-child(1){ fill: rgba(255,255,255,.40); }
+.waves .moving-waves use:nth-child(2){ fill: rgba(255,255,255,.35); }
+.waves .moving-waves use:nth-child(3){ fill: rgba(255,255,255,.25); }
+.waves .moving-waves use:nth-child(4){ fill: rgba(255,255,255,.20); }
+.waves .moving-waves use:nth-child(5){ fill: rgba(255,255,255,.15); }
+.waves .moving-waves use:nth-child(6){ fill: rgba(255,255,255,.10); }
+*/
 .services-grid .col, .services-grid [class^=col-], .services-grid [class*=" col-"] {
   display: flex;
 }
@@ -198,6 +208,15 @@
     margin-bottom: 0.5rem;
   }
 }
+/* Force body font for typical content blocks */
+.card p,
+.card .card-description,
+.card .text-muted,
+.client-description,
+.trust-card p {
+  font-family: var(--bs-body-font-family) !important;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -249,7 +268,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 49, 64, 84;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Open Sans";
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -17852,7 +17871,7 @@ textarea.form-control-lg {
   padding: 1.5rem;
 }
 .card .card-body {
-  font-family: "Open Sans";
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding: 1.5rem;
 }
 .card.card-plain {
@@ -21112,7 +21131,7 @@ p {
 }
 
 .text-sans-serif {
-  font-family: "Open Sans" !important;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
 .text-monospace {
