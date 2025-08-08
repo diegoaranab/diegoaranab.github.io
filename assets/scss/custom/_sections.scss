@@ -36,3 +36,21 @@
 .trust-card p {
   font-family: var(--bs-body-font-family) !important;
 }
+/* --- Hairline seam fixes between SVG waves and next section --- */
+
+/* Ensure the SVG doesn’t behave like inline content (no baseline gap) and push it onto its own layer */
+.waves{
+  display:block;          /* avoid inline baseline gaps */
+  line-height:0;          /* belt & suspenders */
+  transform: translateZ(0); /* reduce subpixel antialias seams on some GPUs */
+}
+
+/* Utility that overlaps the next section by 1px to cover aliasing at the join */
+.seamless-top{ margin-top:-1px; }
+
+/* Optional alternative: nudge the waves down instead of pulling the next section up
+   .waves{ position:relative; bottom:-1px; }  // use this instead of .seamless-top if you prefer
+*/
+
+/* Guard: make sure the next section doesn’t reintroduce a top border */
+#count-stats{ border-top:0; }
