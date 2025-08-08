@@ -216,27 +216,41 @@
   font-family: var(--bs-body-font-family) !important;
 }
 
-/* --- Hairline seam fixes between SVG waves and next section --- */
-/* Ensure the SVG doesn’t behave like inline content (no baseline gap) and push it onto its own layer */
-.waves {
-  display: block; /* avoid inline baseline gaps */
-  line-height: 0; /* belt & suspenders */
-  transform: translateZ(0); /* reduce subpixel antialias seams on some GPUs */
+/* --- SVG divider seam fixes --- */
+/* Waves should not behave inline (no baseline gap) */
+.waves,
+.wave-up-svg {
+  display: block;
+  line-height: 0;
+  shape-rendering: geometricPrecision; /* reduces edge fuzz in many engines */
+  transform: translateZ(0); /* force own layer, helps at odd DPR/zoom */
 }
 
-/* Utility that overlaps the next section by 1px to cover aliasing at the join */
-.seamless-top {
-  margin-top: -1px;
+/* Nudge the BOTTOM wave down to overlap the next section by 1–2px */
+.wave-up-svg {
+  position: relative;
+  bottom: -2px; /* try -1px first; -2px is the safer default */
 }
 
-/* Optional alternative: nudge the waves down instead of pulling the next section up
-   .waves{ position:relative; bottom:-1px; }  // use this instead of .seamless-top if you prefer
-*/
-/* Guard: make sure the next section doesn’t reintroduce a top border */
+/* Paint a 2px top strip on the next section so no seam can show through */
 #count-stats {
-  border-top: 0;
+  position: relative;
+  border-top: 0; /* ensure no framework border leaks through */
 }
 
+#count-stats::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -2px;
+  height: 2px;
+  background-color: #f8f9fa; /* matches .bg-gray-100 in your compiled CSS */
+  pointer-events: none;
+}
+
+/* If your .bg-gray-100 token changes later, keep the pseudo strip in sync: */
+/* .bg-gray-100 { background-color: #f8f9fa !important; } */
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
