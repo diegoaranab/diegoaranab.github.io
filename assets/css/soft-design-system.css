@@ -165,8 +165,7 @@
    Keep the waves visible and add a subtle gradient+blur mask for legibility */
 .hero-mask {
   background: linear-gradient(135deg, rgba(11, 31, 54, 0.92) 0%, rgba(11, 31, 54, 0.68) 55%, rgba(11, 31, 54, 0.85) 100%);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px); /* widely supported now */
+  backdrop-filter: blur(4px); /* widely supported now */
 }
 
 /* ===== Waves tint option (brand-friendly) =====
@@ -215,6 +214,27 @@
 .client-description,
 .trust-card p {
   font-family: var(--bs-body-font-family) !important;
+}
+
+/* --- Hairline seam fixes between SVG waves and next section --- */
+/* Ensure the SVG doesn’t behave like inline content (no baseline gap) and push it onto its own layer */
+.waves {
+  display: block; /* avoid inline baseline gaps */
+  line-height: 0; /* belt & suspenders */
+  transform: translateZ(0); /* reduce subpixel antialias seams on some GPUs */
+}
+
+/* Utility that overlaps the next section by 1px to cover aliasing at the join */
+.seamless-top {
+  margin-top: -1px;
+}
+
+/* Optional alternative: nudge the waves down instead of pulling the next section up
+   .waves{ position:relative; bottom:-1px; }  // use this instead of .seamless-top if you prefer
+*/
+/* Guard: make sure the next section doesn’t reintroduce a top border */
+#count-stats {
+  border-top: 0;
 }
 
 /*!
@@ -18825,12 +18845,10 @@ svg.text-dark .color-background {
 
 .blur {
   box-shadow: inset 0px 0px 2px rgba(254, 254, 254, 0.8196078431);
-  -webkit-backdrop-filter: saturate(200%) blur(30px);
   backdrop-filter: saturate(200%) blur(30px);
   background-color: rgba(255, 255, 255, 0.8) !important;
 }
 .blur.saturation-less {
-  -webkit-backdrop-filter: saturate(20%) blur(30px);
   backdrop-filter: saturate(20%) blur(30px);
 }
 .blur.blur-rounded {
@@ -18852,13 +18870,11 @@ svg.text-dark .color-background {
 }
 
 .navbar-blur {
-  -webkit-backdrop-filter: saturate(200%) blur(30px);
   backdrop-filter: saturate(200%) blur(30px);
   background-color: rgba(255, 255, 255, 0.58) !important;
 }
 
 .blur-section {
-  -webkit-backdrop-filter: saturate(200%) blur(30px);
   backdrop-filter: saturate(200%) blur(30px);
 }
 .blur-section.blur-gradient-primary {
@@ -22521,7 +22537,6 @@ pre[class*=language-] {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  -webkit-hyphens: none;
   hyphens: none;
 }
 
